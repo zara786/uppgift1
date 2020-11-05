@@ -1,0 +1,562 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #3f3f3f;
+    color: grey;
+    font-family: serif;
+}
+h1, h2, h3 {
+    color: #3f3f3f;
+}
+p {
+    font-size: 1.6vw;
+}
+#container {
+    width: 74vw;
+    height: 295vw;
+    background-color:#2b2e34;
+    margin: auto;
+    overflow: hidden;
+}
+
+/*1ST WHITE PAGE STARTS HERE */
+#page-1 {
+    background-color: white;
+    height: 125vw;
+}
+
+/*START OF TOP IMAGE AREA WITH INTRO*/
+#top {
+    position: relative;
+}
+#top img {
+    width: 88.5vw;
+    position: absolute;
+    left:-7vw;
+}
+#top h2 {
+    position: absolute;
+    left: 34vw;
+    top: 3vw;
+    font-size: 2.2vw;
+    font-family: sans-serif;
+}
+/* END OF HEADER IMAGE */
+
+/* START OF TEXT BELOW THE IMAGE IN HEADER */
+#top section {
+    position: relative;
+}
+#top h3 {
+    color: #3f3f3f;
+    font-size: 4vw;
+    position: absolute;
+    top: 45vw;
+    left: 39vw;
+}
+#top span {
+    position: absolute;
+    left: 20vw;
+    top: 54vw;
+    font-size: 1.6vw;
+}
+#top span:last-child {
+    position: absolute;
+    left: 39.2vw;
+    top:56vw;
+}
+/* END OF HEADER TEXT*/
+
+/* START OF MAIN PAGE 1*/
+#main-1 {
+    position: absolute;
+    top: 70vw;
+    left: 22vw;
+    height:50vw;
+}
+#main-1 section {
+    position: absolute;
+    width: 29vw;
+    margin-left: 3vw;
+}
+.para2 {
+    position: absolute;
+    width: 29vw;
+    margin-left: 3vw;
+    top: 27vw;
+}
+#main-1 h2 {
+    margin-bottom: 2.5vw;
+    font-size: 2.5vw;
+}
+#main-1 p{
+    font-size: 1.6vw;
+    margin-bottom: 2.3vw;
+}
+
+/*PAGE 1'S IMAGE TO THE RIGHT*/
+#main-1 img {
+    width: 40vw;
+    position: absolute;
+    height: auto;
+    left: 22vw;
+    top: -10vw;
+}
+/*END OF PAGE 1*/
+
+/*START OF PAGE 2*/
+#page-2 {
+    background-color: white;
+   /*main*/
+    position: relative;
+    top:36vw;
+    height: 103vw;
+}
+#main-2 {
+    position: absolute;
+}
+#main-2 img {
+    width: 42vw;
+    position: absolute;
+    top:-4vw;
+    left:-1vw;
+    height: auto;
+}
+.text-2 {
+    position: absolute;
+    max-width:25vw;
+    width: 100%;
+    height: 35vw;
+    top: 8vw;
+    left:36vw;
+    font-size: 1.6vw;
+}
+
+/*last paragraphs*/
+.text-3 {
+    position: relative;
+    top: 60vw;
+    left:15vw;
+    width: 45vw;
+}
+/*end of last paragraph*/
+
+/*newsletter, paragraph on top of an image starts here*/
+#newsletter {
+    position: relative;
+    top:80vw;
+}
+#newsletter img {
+    width:74vw;
+}
+#newsletter h1 {
+    position: absolute;
+    top: 13vw;
+    left: 26vw;
+    font-size: 4.3vw;
+}
+#newsletter p {
+    position: absolute;
+    top: 20vw;
+    width:51vw;
+    left: 13vw;
+}
+/*END OF PAGE 2*/
+
+/*FOOTER STARTS HERE*/
+footer {
+    color: white;
+    position: relative;
+    left: 6vw;
+    top: 50vw;
+    font-size: 1.5vw;
+    padding-bottom: 3vw;
+}
+.left {
+    width: 25vw;
+    position: absolute;
+    left: 6vw;
+}
+.left h2{
+    position: absolute;
+    top: -2vw;
+    padding-bottom: 2vw;
+    color: white;
+}
+.right {
+    width: 28vw;
+    position: absolute;
+    left: 38vw;
+    top: 1.8vw;
+}
+/*END OF FOOTER AND DESKTOP VIEW*/
+
+/*RESPONSIVE TEXT(READABLE IN SMALLER SCREENS)*/
+@media only screen and (max-width:599px) {
+    #container {
+        height: 1810px;
+   }
+
+   /*MAIN PAGE 1*/
+    #top span {
+        font-size: 0.8em;
+   }
+    #top span {
+        left: 9vw;
+        top: 54vw;
+   }
+    #top span:last-child {
+        left: 35vw;
+        top:56.5vw;
+   }
+    #main-1 p {
+        font-size: 0.8em;
+   }
+    #main-1 img {
+        width: 30vw;
+        top: -8vw;
+        left:33vw;
+        height: 42vw;
+   }
+    #main-1 section {
+        width:40vw;
+   }
+    .para2 {
+        width: 57vw;
+        margin-left: 3vw;
+        top: 190px;
+   }
+    #page-1 {
+        height: 760px;
+   }
+   /*END OF PAGE 1*/
+
+   /*START OF PAGE 2*/
+    #main-2 img {
+        width: 30vw;
+        height: 42vw;
+        top: 0.5vw;
+   }
+    .text-2 {
+        max-width:39vw;
+        width: 100%;
+        height: 50vw;
+        top: 8vw;
+        left:29vw;
+        font-size: 0.8em;
+   }
+    p {
+        font-size: 1em;
+       /* i added this as ".text-2" paragraph on page 2 was not changing its size by adding font-size above. if i remove font-size from ".text-2", it still does'nt work */
+   }
+    .text-3 {
+        top: 45vw;
+        left:12vw;
+        width: 58vw;
+        font-size: 0.8em;
+   }
+
+   /*NEWSLETTER */
+    #newsletter {
+        top:75vw;
+   }
+    #newsletter h1 {
+        top: 10vw;
+        left: 24vw;
+   }
+    #newsletter p {
+        top: 16vw;
+        width:55vw;
+        font-size: 0.8em;
+        padding-bottom: 2vw;
+   }
+
+   /*FOOTER */
+    footer {
+        font-size: 0.8em;
+        padding-bottom: 3vw;
+   }
+    left {
+        width: 33vw;
+        left: 1vw;
+   }
+    .left h2{
+        top: -5vw;
+        padding-bottom: 2vw;
+        .right {
+            position: absolute;
+            left: 49vw;
+            top: 1.8vw;
+       }
+   }
+    @media only screen and (max-width:581px) {
+        .text-3 {
+            top: 47vw;
+       }
+        footer {
+            font-size: 0.7em;
+            padding-bottom: 1vw;
+       }
+        #container {
+            height: 1760px;
+       }
+   }
+    @media only screen and (max-width:555px) {
+        #page-1 {
+            height: 690px;
+       }
+        .text-3 {
+            top: 43vw;
+       }
+        #top span, #main-1 p, .text-2, .text-3, #newsletter p, footer {
+            font-size: 0.7em;
+       }
+        p {
+            font-size: 1em;
+           /* i added this as ".text-2" paragraph on page 2 was not changing its size by adding font-size above. if i remove font-size from ".text-2", it still does'nt work */
+       }
+        .para2 {
+            top: 170px;
+       }
+        #newsletter {
+            top:355px;
+       }
+        #page-2 {
+            height: 510px;
+       }
+        #container {
+            height: 1620px;
+       }
+   }
+    @media only screen and (max-width:500px) {
+        .text-3 {
+            top: 230px;
+       }
+        #newsletter {
+            top:370px;
+       }
+        #page-1 {
+            height: 670px;
+       }
+        #page-2 {
+            height: 520px;
+       }
+        #container {
+            height: 1590px;
+       }
+   }
+   @media only screen and (max-width:490px) {
+    #main-2 img {
+    
+        position: absolute;
+        top:9vw;
+        
+    }
+   
+   }
+    @media only screen and (max-width:468px) {
+        .text-3 {
+            top: 245px;
+       }
+        #container {
+            height: 1570px;
+       }
+        #page-2 {
+            height: 535px;
+       }
+        #newsletter {
+            top:390px;
+       }
+        #page-1 {
+            height: 650px;
+       }
+   }
+    @media only screen and (max-width:462px) {
+        #newsletter {
+            top:390px;
+       }
+        #page-1 {
+            height: 630px;
+       }
+   }
+    @media only screen and (max-width:458px) {
+        .text-3 {
+            top: 255px;
+       }
+        #page-2 {
+            height: 550px;
+       }
+        #newsletter {
+            top:410px;
+       }
+   }
+    @media only screen and (max-width:448px) {
+        #newsletter p {
+            font-size: 0.6em;
+            width:60vw;
+       }
+        #page-2 {
+            height: 518px;
+       }
+        #top span {
+            font-size: 0.6em;
+       }
+        .text-3 {
+            top: 255px;
+       }
+        #container {
+            height: 1510px;
+       }
+        footer {
+            top: 55vw;
+       }
+   }
+    @media only screen and (max-width:434px) {
+        #page-2 {
+            height: 505px;
+       }
+        #container {
+            height: 1530px;
+       }
+        footer {
+            top: 56vw;
+       }
+   }
+    @media only screen and (max-width:425px) {
+        .para2 {
+            top: 180px;
+       }
+   }
+    @media only screen and (max-width:407px) {
+        .text-3 {
+            top: 210px;
+       }
+        #page-2 {
+            height: 480px;
+       }
+        #newsletter {
+            top:360px;
+       }
+        #page-1 {
+            height: 590px;
+       }
+        #top span, #main-1 p, .text-2, .text-3, #newsletter p, footer {
+            font-size: 0.6em;
+       }
+        .para2 {
+            top: 160px;
+       }
+        #container {
+            height: 1410px;
+       }
+        footer {
+            top: 51vw;
+       }
+   }
+    @media only screen and (max-width:392px) {
+        .text-3 {
+            top: 225px;
+       }
+        #newsletter img {
+            height: 130px;
+       }
+        #newsletter {
+            top:380px;
+       }
+        #page-2 {
+            height: 499px;
+       }
+        #top span {
+            width: 100%;
+            left: 4vw;
+       }
+   }
+    @media only screen and (max-width:381px) {
+        #top span {
+            font-size: 0.55em;
+       }
+   }
+   @media only screen and (max-width:347px) {
+    .text-3 {
+        top: 240px;
+   }
+}
+        
+    @media only screen and (max-width:345px) {
+        
+        #top span {
+            font-size: 0.5em;
+       }
+        .text-3 {
+            top: 255px;
+       }
+        #page-2 {
+            height: 550px;
+       }
+        #newsletter {
+            top:420px;
+       }
+        #page-1 {
+            height: 555px;
+       }
+        #container {
+            height: 1450px;
+       }
+   }
+    @media only screen and (max-width:329px) {
+        #page-2 {
+            height: 560px;
+       }
+        #newsletter {
+            top:430px;
+       }
+        #container {
+            height: 1450px;
+       }
+   }
+    @media only screen and (max-width:309px) {
+        .text-3 {
+            top: 265px;
+       }
+        #top span {
+            font-size: 0.47em;
+       }
+        #page-2 {
+            height: 570px;
+       }
+        #newsletter {
+            top:440px;
+       }
+        #container {
+            height: 1450px;
+       }
+   }
+    @media only screen and (max-width:304px) {
+        .text-3 {
+            top: 270px;
+       }
+        #page-2 {
+            height: 585px;
+       }
+        #newsletter {
+            top:455px;
+       }
+   }
+    @media only screen and (max-width:280px) {
+        .text-3 {
+            top: 280px;
+       }
+        #page-2 {
+            height: 595px;
+       }
+        #newsletter {
+            top:465px;
+       }
+        #container {
+            height: 1470px;
+       }
+   }
+    
